@@ -43,7 +43,7 @@ class QrContainer extends Component {
     return (
       <React.Fragment>
         <div style={camStyle}>
-          <QrReader delay={100} facingMode={"front"} style={previewStyle} onError={this.handleError} onScan={this.handleScan} />
+          <QrReader delay={100} facingMode={"rear"} style={previewStyle} onError={this.handleError} onScan={this.handleScan} />
         </div>
         <p>{this.state.error}</p>
         <p style={textStyle}>{this.state.result}</p>
